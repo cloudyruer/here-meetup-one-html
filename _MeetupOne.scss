@@ -75,9 +75,13 @@
   &__attendee-box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
-    background-color: #eef4ef;
+    width: 120px;
+    height: 160px;
+
+    background-color: $meetup-lightgreen2;
   }
 
   &__attendee-img-wrap {
@@ -93,6 +97,7 @@
   }
 
   &__attendee-name {
+    margin-top: 20px;
     font-size: 20px;
   }
 }
