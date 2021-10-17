@@ -305,6 +305,7 @@
 /* Track */
 .j-one-banner__time {
   font-size: 20px;
+  font-weight: 500;
 }
 
 .j-one-banner__title {
@@ -320,7 +321,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .j-one-user__img-box {
@@ -368,6 +370,7 @@
 
 .j-one-section__type {
   font-size: 20px;
+  font-weight: bold;
 }
 
 .j-one-section__paragraph {
@@ -378,9 +381,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.j-one-section__attendee-box {
+.j-one-section__recommend-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.j-one-attendee {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,25 +406,62 @@
       -ms-flex-align: center;
           align-items: center;
   width: 120px;
-  height: 160px;
+  height: 180px;
   background-color: #eef4ef;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin: 20px 25px 0px 0px;
 }
 
-.j-one-section__attendee-img-wrap {
-  width: 60px;
-  height: 60px;
+.j-one-attendee__img-wrap {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-.j-one-section__attendee-img-wrap img {
+.j-one-attendee__img-wrap img {
   width: 100%;
   height: 100%;
 }
 
-.j-one-section__attendee-name {
+.j-one-attendee__name {
   margin-top: 20px;
   font-size: 20px;
+  font-weight: 500;
+}
+
+.j-one-recommend {
+  background-color: #eef4ef;
+  padding: 25px;
+}
+
+.j-one-recommend__time {
+  font-weight: 500;
+}
+
+.j-one-recommend__title {
+  margin-top: 1px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.j-one-recommend__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.j-one-recommend__location i {
+  margin-left: 6px;
+  margin-right: 13px;
+}
+
+.j-one-recommend__data {
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .j-one-side {
@@ -435,6 +483,7 @@
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .j-one-side__data-box i {

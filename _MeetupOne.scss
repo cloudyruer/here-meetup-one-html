@@ -2,6 +2,7 @@
 .j-one-banner {
   &__time {
     font-size: 20px;
+    font-weight: 500;
   }
 
   &__title {
@@ -15,7 +16,8 @@
 .j-one-user {
   display: flex;
   align-items: center;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 20px;
 
   &__img-box {
     width: 50px;
@@ -61,32 +63,45 @@
 
   &__type {
     font-size: 20px;
+    font-weight: bold;
   }
 
   &__paragraph {
     font-size: 20px;
   }
 
-  // 參加者
+  // 下面參加者卡片的外框
   &__attendee-wrap {
     display: flex;
+    flex-wrap: wrap;
+    // overflow: auto;
   }
 
-  &__attendee-box {
+  // 下面推薦活動的外框
+  &__recommend-wrap {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 120px;
-    height: 160px;
-
-    background-color: $meetup-lightgreen2;
   }
+}
 
-  &__attendee-img-wrap {
-    width: 60px;
-    height: 60px;
+// 參加者卡片
+.j-one-attendee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 120px;
+  height: 180px;
+
+  background-color: $meetup-lightgreen2;
+  padding-left: 13px;
+  padding-right: 13px;
+
+  margin: 20px 25px 0px 0px;
+
+  &__img-wrap {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     overflow: hidden;
 
@@ -96,9 +111,40 @@
     }
   }
 
-  &__attendee-name {
+  &__name {
     margin-top: 20px;
     font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+// 推薦活動卡片
+.j-one-recommend {
+  background-color: $meetup-lightgreen2;
+  padding: 25px;
+
+  &__time {
+    font-weight: 500;
+  }
+  &__title {
+    margin-top: 1px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  &__location {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    i {
+      margin-left: 6px;
+      margin-right: 13px;
+    }
+  }
+
+  &__data {
+    font-weight: 600;
+    margin-bottom: 10px;
   }
 }
 
@@ -119,6 +165,7 @@
     display: flex;
     align-items: baseline;
     margin-bottom: 8px;
+    font-weight: 600;
 
     i {
       margin-right: 15px;
