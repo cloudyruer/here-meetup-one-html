@@ -55,38 +55,51 @@
     <div class="container mt-4">
       <div class="row">
         <!-- NOTE 左邊詳細資料 -->
-        <div class="col-8 team-bg-primary">
+        <div class="col-8 team-bg-warning">
           <!-- 詳細資料 -->
-          <div class="j-one-meetup">
+          <div class="j-one-meetup-wrap">
             <!-- 活動照片 -->
-            <div class="j-one-meetup__img-box">
+            <div class="j-one-meetup-wrap__img-box">
               <img src="./hike.jpg" alt="" />
             </div>
 
             <!-- 活動內容 -->
-            <div class="j-one-meetup__detail-box">
+            <div class="j-one-section">
               <!-- 活動內容 標題+類別 -->
-              <div class="j-one-meetup__title">
-                <div class="j-one-meetup__title--content">活動內容</div>
-                <div class="j-one-meetup__title--type">類別: 爬山</div>
+              <div class="j-one-section__title-wrap">
+                <div class="j-one-section__content">活動內容</div>
+                <div class="j-one-section__type">類別: 爬山</div>
               </div>
 
               <!-- 活動內容 -->
-              <p class="j-one-meetup__detail">
-                既然如此，其實，若思緒夠清晰，那麼爬山也就不那麼複雜了。李維在過去曾經講過，勞動和享樂這兩個本質上截然不同的東西被一種自然的聯繫結合在一起。請諸位將這段話在心中默念三遍。爬山必定會成為未來世界的新標準。不要先入為主覺得爬山很複雜，實際上，爬山可能比你想的還要更複雜。
-                現在，正視爬山的問題，是非常非常重要的。因為，問題的關鍵看似不明確，但想必在諸位心中已有了明確的答案。錢三強說過一句著名的話，古今中外，凡成就事業，對人類有作為的無一不是腳踏實地、艱苦攀登的結果。
-                歡迎加入我們！
-                既然如此，其實，若思緒夠清晰，那麼爬山也就不那麼複雜了。李維在過去曾經講過，勞動和享樂這兩個本質上截然不同的東西被一種自然的聯繫結合在一起。請諸位將這段話在心中默念三遍。爬山必定會成為未來世界的新標準。不要先入為主覺得爬山很複雜，實際上，爬山可能比你想的還要更複雜。
-                現在，正視爬山的問題，是非常非常重要的。因為，問題的關鍵看似不明確，但想必在諸位心中已有了明確的答案。錢三強說過一句著名的話，古今中外，凡成就事業，對人類有作為的無一不是腳踏實地、艱苦攀登的結果。
-                歡迎加入我們！
+              <p class="j-one-section__paragraph">
                 既然如此，其實，若思緒夠清晰，那麼爬山也就不那麼複雜了。李維在過去曾經講過，勞動和享樂這兩個本質上截然不同的東西被一種自然的聯繫結合在一起。請諸位將這段話在心中默念三遍。爬山必定會成為未來世界的新標準。不要先入為主覺得爬山很複雜，實際上，爬山可能比你想的還要更複雜。
                 現在，正視爬山的問題，是非常非常重要的。因為，問題的關鍵看似不明確，但想必在諸位心中已有了明確的答案。錢三強說過一句著名的話，古今中外，凡成就事業，對人類有作為的無一不是腳踏實地、艱苦攀登的結果。
                 歡迎加入我們！
               </p>
             </div>
+
+            <!-- 參加者 -->
+            <div class="j-one-section">
+              <!-- 活動內容 標題 -->
+              <div class="j-one-section__title-wrap">
+                <div class="j-one-section__content">參加者 (5/8)</div>
+              </div>
+
+              <!-- 參加者 -->
+              <div class="j-one-section__attendee-wrap">
+                <!--  -->
+                <div class="j-one-section__attendee-box">
+                  <div class="j-one-section__attendee-img-wrap">
+                    <img src="./default_avatar.jpeg" alt="" />
+                  </div>
+                  <div class="j-one-section__attendee-name">Susan</div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+            <!-- meetup end -->
           </div>
-          <!-- 參加者 -->
-          <div></div>
         </div>
 
         <!-- NOTE 右邊 side bar -->
@@ -100,19 +113,19 @@
               <div class="j-one-user__username">Host by Rick</div>
             </div>
 
-            <div class="j-one-side__info">
+            <div class="j-one-side__info-wrap">
               <!-- 舉辦日期 -->
-              <div class="j-one-side__info--box">
+              <div class="j-one-side__data-box">
                 <i class="far fa-calendar"></i>
                 <div>Saturday, September 25,2021</div>
               </div>
               <!-- 舉辦時間 -->
-              <div class="j-one-side__info--box">
+              <div class="j-one-side__data-box">
                 <i class="far fa-clock"></i>
                 <div>5:00 PM</div>
               </div>
               <!-- 活動地點 -->
-              <div class="j-one-side__info--box">
+              <div class="j-one-side__data-box">
                 <i class="fas fa-map-marker-alt fix-2"></i>
                 <div>台北市 信義區</div>
               </div>
@@ -133,9 +146,9 @@
         </div>
       </div>
     </div>
-    <!-- attend -->
-    <div class="container-fluid team-bg-warning position-sticky outside">
-      <div class="container ttt">cool</div>
+    <!--sticky attend bar -->
+    <div class="container-fluid team-bg-primary position-sticky j-one-attend">
+      <div class="container">Attend Bar</div>
     </div>
 
     <!-- fake footer -->

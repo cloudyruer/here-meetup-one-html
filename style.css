@@ -336,18 +336,18 @@
   height: 100%;
 }
 
-.j-one-meetup__img-box {
+.j-one-meetup-wrap__img-box {
   height: 350px;
 }
 
-.j-one-meetup__img-box img {
+.j-one-meetup-wrap__img-box img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.j-one-meetup__title {
+.j-one-section__title-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,16 +361,52 @@
   margin-bottom: 15px;
 }
 
-.j-one-meetup__title--content {
+.j-one-section__content {
   font-size: 32px;
   font-weight: bold;
 }
 
-.j-one-meetup__title--type {
+.j-one-section__type {
   font-size: 20px;
 }
 
-.j-one-meetup__detail {
+.j-one-section__paragraph {
+  font-size: 20px;
+}
+
+.j-one-section__attendee-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.j-one-section__attendee-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eef4ef;
+}
+
+.j-one-section__attendee-img-wrap {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.j-one-section__attendee-img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.j-one-section__attendee-name {
   font-size: 20px;
 }
 
@@ -380,12 +416,12 @@
   top: 60px;
 }
 
-.j-one-side__info {
+.j-one-side__info-wrap {
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-.j-one-side__info--box {
+.j-one-side__data-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,11 +431,11 @@
   margin-bottom: 8px;
 }
 
-.j-one-side__info--box i {
+.j-one-side__data-box i {
   margin-right: 15px;
 }
 
-.j-one-side__info--box i.fix-2 {
+.j-one-side__data-box i.fix-2 {
   margin-left: 2px;
 }
 
@@ -407,11 +443,7 @@
   height: 200px;
 }
 
-.ttt {
-  height: 60px;
-}
-
-.outside {
+.j-one-attend {
   bottom: 0;
 }
 

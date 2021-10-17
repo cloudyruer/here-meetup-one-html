@@ -1,3 +1,4 @@
+// 進去的活動 banner
 .j-one-banner {
   &__time {
     font-size: 20px;
@@ -10,6 +11,7 @@
   }
 }
 
+// 圓形頭貼 + 使用者名稱
 .j-one-user {
   display: flex;
   align-items: center;
@@ -29,7 +31,8 @@
   }
 }
 
-.j-one-meetup {
+// 電腦版 左手邊的活動內容 (照片 + 活動內容 + 參加者)
+.j-one-meetup-wrap {
   &__img-box {
     height: 350px;
 
@@ -41,65 +44,99 @@
   }
 }
 
-.j-one-meetup__title {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-top: 15px;
-  margin-bottom: 15px;
+// 活動資訊 框架 + 內容
+.j-one-section {
+  &__title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 
-  &--content {
+  &__content {
     font-size: 32px;
     font-weight: bold;
   }
 
-  &--type {
+  &__type {
+    font-size: 20px;
+  }
+
+  &__paragraph {
+    font-size: 20px;
+  }
+
+  // 參加者
+  &__attendee-wrap {
+    display: flex;
+  }
+
+  &__attendee-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #eef4ef;
+  }
+
+  &__attendee-img-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__attendee-name {
     font-size: 20px;
   }
 }
 
-.j-one-meetup__detail {
-  font-size: 20px;
-}
-
+// 電腦版 右手邊的活動資訊 (活動時間 + 地點 + 地圖)
 .j-one-side {
   padding: 20px;
   border: 3px solid $team-primary;
   top: 60px;
 
-  &__info {
+  // 資料框調整
+  &__info-wrap {
     margin-top: 25px;
     margin-bottom: 25px;
-    &--box {
-      display: flex;
-      align-items: baseline;
-      margin-bottom: 8px;
+  }
 
-      i {
-        margin-right: 15px;
-      }
+  // 活動時間 + 地點
+  &__data-box {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 8px;
 
-      //  手動調整 icon本身偏左的問題
-      i.fix-2 {
-        margin-left: 2px;
-      }
+    i {
+      margin-right: 15px;
+    }
+
+    //  手動調整 icon本身偏左的問題
+    i.fix-2 {
+      margin-left: 2px;
     }
   }
 
+  // 地圖外框
   &__map {
     height: 200px;
   }
 }
 
-// test and demo
-.ttt {
-  height: 60px;
-}
-
-.outside {
+// 緊貼網站 bottom 的 sticky bar
+.j-one-attend {
   bottom: 0;
 }
 
+// 假的 footer 測試用 正式版要和HTML 一起移除
 .fake-footer {
   background-color: $team-secondary;
   height: 200px;
