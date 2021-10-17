@@ -117,6 +117,14 @@
 .j-one-recommend {
   background-color: $meetup-lightgreen2;
   padding: 25px;
+  border: 7px solid $meetup-lightgreen2;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $team-white;
+    border: 7px solid #96bb7c;
+  }
   // padding-top: 25px;
   // padding-bottom: 25px;
   // margin-right: 20px;
@@ -176,6 +184,22 @@
   &__plus {
     margin-left: 10px;
     font-weight: 600;
+  }
+}
+
+.j-one-btn {
+  color: $team-white;
+  background-color: #025930;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  width: min-content;
+
+  transition: all 0.2s;
+  &:hover {
+    color: $team-white;
+    background: #96bb7c;
   }
 }
 

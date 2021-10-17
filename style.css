@@ -428,6 +428,15 @@
 .j-one-recommend {
   background-color: #eef4ef;
   padding: 25px;
+  border: 7px solid #eef4ef;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.j-one-recommend:hover {
+  background-color: #fff;
+  border: 7px solid #96bb7c;
 }
 
 .j-one-recommend__time {
@@ -502,6 +511,25 @@
 .j-one-count__plus {
   margin-left: 10px;
   font-weight: 600;
+}
+
+.j-one-btn {
+  color: #fff;
+  background-color: #025930;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.j-one-btn:hover {
+  color: #fff;
+  background: #96bb7c;
 }
 
 .j-one-side {
