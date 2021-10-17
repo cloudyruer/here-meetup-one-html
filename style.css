@@ -406,4 +406,17 @@
 .j-one-side__map {
   height: 200px;
 }
+
+.ttt {
+  height: 60px;
+}
+
+.outside {
+  bottom: 0;
+}
+
+.fake-footer {
+  background-color: #023a20;
+  height: 200px;
+}
 /*# sourceMappingURL=style.css.map */
