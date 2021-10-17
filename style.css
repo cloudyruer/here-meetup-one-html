@@ -385,12 +385,6 @@
       flex-wrap: wrap;
 }
 
-.j-one-section__recommend-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .j-one-attendee {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -462,6 +456,52 @@
 .j-one-recommend__data {
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.j-one-recommend__count-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.j-one-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.j-one-count__users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.j-one-count__userImg {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.j-one-count__userImg:not(:last-child) {
+  margin-right: -20px;
+}
+
+.j-one-count__plus {
+  margin-left: 10px;
+  font-weight: 600;
 }
 
 .j-one-side {

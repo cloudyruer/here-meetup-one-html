@@ -76,11 +76,6 @@
     flex-wrap: wrap;
     // overflow: auto;
   }
-
-  // 下面推薦活動的外框
-  &__recommend-wrap {
-    display: flex;
-  }
 }
 
 // 參加者卡片
@@ -122,6 +117,9 @@
 .j-one-recommend {
   background-color: $meetup-lightgreen2;
   padding: 25px;
+  // padding-top: 25px;
+  // padding-bottom: 25px;
+  // margin-right: 20px;
 
   &__time {
     font-weight: 500;
@@ -145,6 +143,39 @@
   &__data {
     font-weight: 600;
     margin-bottom: 10px;
+  }
+
+  &__count-wrap {
+    display: flex;
+    justify-content: space-between;
+    // FIX
+    margin-top: 20px;
+  }
+}
+
+.j-one-count {
+  display: flex;
+  align-items: center;
+
+  &__users {
+    display: flex;
+    align-items: center;
+  }
+  &__userImg {
+    box-sizing: content-box; //default
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+
+    &:not(:last-child) {
+      margin-right: -20px;
+    }
+  }
+
+  &__plus {
+    margin-left: 10px;
+    font-weight: 600;
   }
 }
 
