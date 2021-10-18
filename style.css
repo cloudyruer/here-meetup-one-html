@@ -340,6 +340,7 @@
 
 .j-one-meetup-wrap__img-box {
   height: 350px;
+  margin-bottom: 40px;
 }
 
 .j-one-meetup-wrap__img-box img {
@@ -347,6 +348,10 @@
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.j-one-section {
+  margin-bottom: 70px;
 }
 
 .j-one-section__title-wrap {
@@ -360,7 +365,7 @@
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .j-one-section__content {
@@ -428,7 +433,7 @@
 .j-one-recommend {
   background-color: #eef4ef;
   padding: 25px;
-  border: 7px solid #eef4ef;
+  border: 5px solid #eef4ef;
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -436,7 +441,7 @@
 
 .j-one-recommend:hover {
   background-color: #fff;
-  border: 7px solid #96bb7c;
+  border: 5px solid #96bb7c;
 }
 
 .j-one-recommend__time {
@@ -498,8 +503,8 @@
 .j-one-count__userImg {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   border: 3px solid #fff;
 }
@@ -509,8 +514,9 @@
 }
 
 .j-one-count__plus {
-  margin-left: 10px;
+  margin-left: 8px;
   font-weight: 600;
+  font-size: 20px;
 }
 
 .j-one-btn {
@@ -518,8 +524,9 @@
   background-color: #025930;
   border-radius: 100px;
   font-weight: bold;
-  font-size: 18px;
-  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px 0px;
+  padding: 0 15px;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
@@ -530,6 +537,18 @@
 .j-one-btn:hover {
   color: #fff;
   background: #96bb7c;
+}
+
+.j-one-btn--bottom {
+  background-color: #141719;
+  font-size: 18px;
+  padding: 10px 35px;
+}
+
+.j-one-btn--bottom:hover {
+  color: #fff;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), #000000;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), #000000;
 }
 
 .j-one-side {
@@ -568,10 +587,37 @@
 
 .j-one-attend {
   bottom: 0;
+  color: #fff;
+  background-color: #e88239;
+}
+
+.j-one-attend__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.j-one-attend__info {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .fake-footer {
+  color: #fff;
   background-color: #023a20;
   height: 200px;
+  font-size: 80px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

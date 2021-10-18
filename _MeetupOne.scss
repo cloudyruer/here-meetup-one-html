@@ -37,6 +37,7 @@
 .j-one-meetup-wrap {
   &__img-box {
     height: 350px;
+    margin-bottom: 40px; //推到只顯示活動內容
 
     & img {
       object-fit: cover;
@@ -48,12 +49,14 @@
 
 // 活動資訊 框架 + 內容
 .j-one-section {
+  margin-bottom: 70px; //每個section 都會往下推
+
   &__title-wrap {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 
   &__content {
@@ -117,13 +120,13 @@
 .j-one-recommend {
   background-color: $meetup-lightgreen2;
   padding: 25px;
-  border: 7px solid $meetup-lightgreen2;
+  border: 5px solid $meetup-lightgreen2;
   cursor: pointer;
   transition: all 0.2s;
 
   &:hover {
     background-color: $team-white;
-    border: 7px solid #96bb7c;
+    border: 5px solid #96bb7c;
   }
   // padding-top: 25px;
   // padding-bottom: 25px;
@@ -171,8 +174,8 @@
   }
   &__userImg {
     box-sizing: content-box; //default
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     border: 3px solid #fff;
 
@@ -182,8 +185,9 @@
   }
 
   &__plus {
-    margin-left: 10px;
+    margin-left: 8px;
     font-weight: 600;
+    font-size: 20px;
   }
 }
 
@@ -192,14 +196,32 @@
   background-color: #025930;
   border-radius: 100px;
   font-weight: bold;
-  font-size: 18px;
-  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px 0px; //壓進去
+  padding: 0 15px;
   width: min-content;
 
   transition: all 0.2s;
   &:hover {
     color: $team-white;
     background: #96bb7c;
+  }
+
+  &--bottom {
+    background-color: #141719;
+
+    font-size: 18px;
+    padding: 10px 35px;
+
+    &:hover {
+      color: $team-white;
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0.3)
+        ),
+        #000000;
+    }
   }
 }
 
@@ -241,10 +263,29 @@
 // 緊貼網站 bottom 的 sticky bar
 .j-one-attend {
   bottom: 0;
+  color: $team-white;
+  background-color: $team-primary;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__info {
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
 
 // 假的 footer 測試用 正式版要和HTML 一起移除
 .fake-footer {
+  color: $team-white;
   background-color: $team-secondary;
   height: 200px;
+  font-size: 80px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
