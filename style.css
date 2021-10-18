@@ -363,7 +363,7 @@
 }
 
 .j-one-section {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .j-one-section__title-wrap {
@@ -394,14 +394,6 @@
   font-size: 20px;
 }
 
-.j-one-section__attendee-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .j-one-attendee {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,12 +408,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 120px;
-  height: 180px;
+  height: 185px;
   background-color: #eef4ef;
-  padding-left: 13px;
-  padding-right: 13px;
-  margin: 20px 25px 0px 0px;
+  max-width: 130px;
+  margin: 0 auto 30px;
 }
 
 .j-one-attendee__img-wrap {

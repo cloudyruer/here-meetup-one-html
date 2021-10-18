@@ -56,7 +56,7 @@
 
 // 活動資訊 框架 + 內容
 .j-one-section {
-  margin-bottom: 70px; //每個section 都會往下推
+  margin-bottom: 50px; //每個section 都會往下推
 
   &__title-wrap {
     display: flex;
@@ -81,11 +81,11 @@
   }
 
   // 下面參加者卡片的外框
-  &__attendee-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    // overflow: auto;
-  }
+  // &__attendee-wrap {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   // overflow: auto;
+  // }
 }
 
 // 參加者卡片
@@ -95,14 +95,13 @@
   justify-content: center;
   align-items: center;
 
-  width: 120px;
-  height: 180px;
+  // width: 120px;
+  height: 185px;
 
   background-color: $meetup-lightgreen2;
-  padding-left: 13px;
-  padding-right: 13px;
 
-  margin: 20px 25px 0px 0px;
+  max-width: 130px;
+  margin: 0 auto 30px;
 
   &__img-wrap {
     width: 80px;
