@@ -35,13 +35,13 @@
     <!-- start -->
 
     <!-- title banner -->
-    <div class="container mt-5">
+    <div class="container mt-4 mt-md-5">
       <div class="row">
         <div class="col-12">
           <div class="j-one-banner">
             <div class="j-one-banner__time">Saturday, September 25, 2021</div>
             <div class="j-one-banner__title">無聊的禮拜六一起去征服象山</div>
-            <div class="j-one-user">
+            <div class="j-one-user d-none d-lg-flex">
               <div class="j-one-user__img-box">
                 <img src="./default_avatar.jpeg" alt="" />
               </div>
@@ -55,7 +55,7 @@
     <div class="container mt-4">
       <div class="row">
         <!-- NOTE 左邊詳細資料 -->
-        <div class="col-8 team-bg-warning">
+        <div class="order-1 order-lg-0 col-12 col-lg-8 team-bg-warning">
           <!-- 詳細資料 -->
           <div class="j-one-meetup-wrap">
             <!-- 活動照片 -->
@@ -153,7 +153,14 @@
         </div>
 
         <!-- NOTE 右邊 side bar -->
-        <div class="col-4 team-bg-success position-relative">
+        <div
+          class="
+            order-0 order-lg-1
+            col-12 col-lg-4
+            team-bg-success
+            position-relative
+          "
+        >
           <div class="j-one-side position-sticky">
             <!-- 使用者照片 + 名字 -->
             <div class="j-one-user">
@@ -201,7 +208,7 @@
             <!-- 推薦活動外框 -->
             <div class="row">
               <!-- 1 start -->
-              <div class="col-4">
+              <div class="col-12 col-lg-4">
                 <!-- 卡片開始 -->
                 <div class="j-one-recommend">
                   <!-- time -->
@@ -254,7 +261,7 @@
               </div>
               <!-- end -->
               <!-- 2 start -->
-              <div class="col-4">
+              <div class="col-12 col-lg-4">
                 <!-- 卡片開始 -->
                 <div class="j-one-recommend">
                   <!-- time -->
@@ -307,7 +314,7 @@
               </div>
               <!-- end -->
               <!-- 3 start -->
-              <div class="col-4">
+              <div class="col-12 col-lg-4">
                 <!-- 卡片開始 -->
                 <div class="j-one-recommend">
                   <!-- time -->
@@ -370,7 +377,12 @@
         <div class="j-one-attend__left">
           <div class="j-one-attend__time">Saturday, September, 25, 2021</div>
           <div class="j-one-attend__info">
-            無聊的禮拜六一起去征服象山 / 活動類別: 爬山
+            <div>
+              無聊的禮拜六一起去征服象山好嗎<span class="d-none d-md-inline"
+                >&nbsp;/&nbsp;</span
+              >
+            </div>
+            <div>活動類別: 爬山</div>
           </div>
         </div>
         <button class="btn j-one-btn j-one-btn--bottom">Attend</button>
