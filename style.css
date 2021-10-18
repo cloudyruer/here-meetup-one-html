@@ -447,8 +447,15 @@
   padding: 25px;
   border: 5px solid #eef4ef;
   cursor: pointer;
+  margin-bottom: 20px;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
+}
+
+@media only screen and (min-width: 992px) {
+  .j-one-recommend {
+    margin-bottom: 0;
+  }
 }
 
 .j-one-recommend:hover {
@@ -530,7 +537,6 @@
 }
 
 .j-one-count__plus {
-  margin-left: 8px;
   font-weight: 600;
   font-size: 20px;
 }

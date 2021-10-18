@@ -129,6 +129,10 @@
   padding: 25px;
   border: 5px solid $meetup-lightgreen2;
   cursor: pointer;
+  margin-bottom: 20px;
+  @include respond(team-lg) {
+    margin-bottom: 0;
+  }
 
   // NOTE 避免使用者圖片邊框顏色變化不正常 因此只限定border
   transition: border 0.2s;
@@ -202,7 +206,6 @@
   }
 
   &__plus {
-    margin-left: 8px;
     font-weight: 600;
     font-size: 20px;
   }
